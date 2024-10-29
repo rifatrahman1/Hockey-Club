@@ -17,11 +17,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@200..800&display=swap"
         rel="stylesheet">
-        <!-- font awesome cdn link -->
-        <script src="https://kit.fontawesome.com/caf423a0ab.js" crossorigin="anonymous"></script>
+    <!-- font awesome cdn link -->
+    <script src="https://kit.fontawesome.com/caf423a0ab.js" crossorigin="anonymous"></script>
+    <!-- flowbite cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <title>Hockey Club</title>
     <style>
-        .manrope{
+        .manrope {
             font-family: "Manrope", serif;
         }
     </style>
@@ -46,12 +48,12 @@
 
     <header class="lg:w-8/12 w-10/12 mx-auto mt-12">
         <!-- nav section start -->
-         <nav class="flex items-center justify-between">
+        <nav class="flex items-center justify-between">
             <div class="lg:hidden space-y-2">
                 <div class="w-8 bg-[#13131899] h-1"></div>
                 <div class="w-8 bg-[#13131899] h-1"></div>
                 <div class="w-8 bg-[#13131899] h-1"></div>
-              </div>
+            </div>
             <div>
                 <h1 class="text-4xl font-extrabold text-[#131318]">Hockey<span class="text-[#FF4240]">’</span>s</h1>
             </div>
@@ -66,9 +68,147 @@
                 <span><i class="fa-solid fa-magnifying-glass h-6 w-6 text-[#89898B] mr-6"></i></span>
                 <button class="text-xl font-bold text-white py-[15px] px-6 bg-[#FF4240] rounded-lg">Get Ticket</button>
             </div>
-         </nav>
+        </nav>
+
+        <!-- banner section start -->
+        <div class="mt-14">
+
+
+            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative overflow-hidden h-[550px] rounded-lg">
+                    <!-- Item 1 -->
+                    <div style="background-image: url(./Images/1.png)"
+                        class="hidden duration-700 ease-in-out w-full bg-cover bg-center rounded-lg" data-carousel-item>
+                        <div class="bg-[#131318] lg:w-[566px] rounded-2xl p-8 absolute bottom-8 right-8">
+                            <h2 class="text-2xl font-extrabold text-white ">Meet all the heroes from the field</h2>
+                            <p class="text-white opacity-60 mt-4">Dit amet consectetur. Condimentum dignissim adipiscing
+                                aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div style="background-image: url(./Images/1.png)"
+                        class="hidden duration-700 ease-in-out w-full bg-cover bg-center rounded-lg" data-carousel-item>
+                        <div class="bg-[#131318] lg:w-[566px] rounded-2xl p-8 absolute bottom-8 right-8">
+                            <h2 class="text-2xl font-extrabold text-white ">Meet all the heroes from the field</h2>
+                            <p class="text-white opacity-60 mt-4">Dit amet consectetur. Condimentum dignissim adipiscing
+                                aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div style="background-image: url(./Images/1.png)"
+                        class="hidden duration-700 ease-in-out w-full bg-cover bg-center rounded-lg" data-carousel-item>
+                        <div class="bg-[#131318] lg:w-[566px] rounded-2xl p-8 absolute bottom-8 right-8">
+                            <h2 class="text-2xl font-extrabold text-white ">Meet all the heroes from the field</h2>
+                            <p class="text-white opacity-60 mt-4">Dit amet consectetur. Condimentum dignissim adipiscing
+                                aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div style="background-image: url(./Images/1.png)"
+                        class="hidden duration-700 ease-in-out w-full bg-cover bg-center rounded-lg" data-carousel-item>
+                        <div class="bg-[#131318] lg:w-[566px] rounded-2xl p-8 absolute bottom-8 right-8">
+                            <h2 class="text-2xl font-extrabold text-white ">Meet all the heroes from the field</h2>
+                            <p class="text-white opacity-60 mt-4">Dit amet consectetur. Condimentum dignissim adipiscing
+                                aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div style="background-image: url(./Images/1.png)"
+                        class="hidden duration-700 ease-in-out w-full bg-cover bg-center rounded-lg" data-carousel-item>
+                        <div class="bg-[#131318] lg:w-[566px] rounded-2xl p-8 absolute bottom-8 right-8">
+                            <h2 class="text-2xl font-extrabold text-white ">Meet all the heroes from the field</h2>
+                            <p class="text-white opacity-60 mt-4">Dit amet consectetur. Condimentum dignissim adipiscing
+                                aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                        data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                        data-carousel-slide-to="4"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+        </div>
+        <div>
+
+        </div>
     </header>
 
+    <!-- main section start -->
+
+    <main class="lg:w-8/12 w-10/12 mx-auto">
+        <!-- professional hockey club section start -->
+        <section class="mt-36">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold text-[#131318]">Professional Hockeys Club</h1>
+                <p class="font-medium mt-6 text-[#13131899] leading-7">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna
+                    in sit nullam proin. </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-20 space-y-6 lg:space-y-0">
+                <div class="text-center">
+                    <div class="radial-progress text-[#FF4240] h-[120px] w-[120px] text-[28px] font-extrabold" style="--value:87;" role="progressbar">87%</div>
+                    <p class="text-xl font-semibold text-[#131318] mt-6">Prayer Facility</p>
+                    <p class="text-[#13131899] mt-4 leading-7">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-[#49D293] h-[120px] w-[120px] text-[28px] font-extrabold" style="--value:95;" role="progressbar">95%</div>
+                    <p class="text-xl font-semibold text-[#131318] mt-6">Prayer Facility</p>
+                    <p class="text-[#13131899] mt-4 leading-7">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-[#FFB546] h-[120px] w-[120px] text-[28px] font-extrabold" style="--value:90;" role="progressbar">90%</div>
+                    <p class="text-xl font-semibold text-[#131318] mt-6">Prayer Facility</p>
+                    <p class="text-[#13131899] mt-4 leading-7">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-[#4C8DF1] h-[120px] w-[120px] text-[28px] font-extrabold" style="--value:80;" role="progressbar">80%</div>
+                    <p class="text-xl font-semibold text-[#131318] mt-6">Prayer Facility</p>
+                    <p class="text-[#13131899] mt-4 leading-7">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- flowbite script -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
